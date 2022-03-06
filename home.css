@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+    transition:width none;
+    
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+ html::-webkit-scrollbar{
+    width:1rem;
+}
+body{
+    padding:0px;
+    margin:0px;
+    border:0px;
+    background-color:  #8d929626;;
+  }
+
+section{
+    padding:11rem 9%;
+}
+
+
+/*  nav Links */
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: center;
+    align-items: center;
+    margin-right: -32%;
+}
+
+.navbar{
+    flex:1;
+    text-align: right;
+}
+
+.navbar a{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    border-bottom: 0px solid rgb(148, 25, 25);
+    transition: 0.3s;
+}
+
+.navbar a{
+   color: rgb(255 255 255);
+    text-decoration: none;
+    font-size: 13px; 
+}
+
+
+.navbar a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336 ;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar a:hover::after{
+   width: 100%;
+   color:#ffffff
+}
+
+/*  LOGO */
+.header .header-1{
+    background: #163987;
+    padding:1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .4s;
+    height: 7.0rem; 
+    z-index: 10;
+    position: fixed;
+    top:0; left:0; right:0;
+    width: 100%;
+}
+
+
+.header .header-1 .logo{
+    font-size: 2.0rem;
+    font-weight: bolder;
+    color: #ffffff;
+}
+.header .header-1 .logo:hover{
+    color: #ffffff;
+}
+
+
+
+

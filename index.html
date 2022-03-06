@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css"/>
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title> Prime Numbers </title>
+
+            <!-- Favicon -->
+            <link rel="icon" type="image/x-icon" href="/123.jpg">
+            <!-- custom css file link  -->
+            <link rel="stylesheet" href="home.css">
+    </head>
+        <body>
+            
+        <!-- header section starts  -->
+        
+        <header class="header">
+            <div class="header-1">
+                <a class="logo"> Sieve of Eratosthenes </a>
+                <nav class="navbar" id="navbars">
+                </nav>
+            </div>
+        </header>
+        
+        <!-- header section ends -->
+        <section id="visual">
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+        <table id="table">
+
+        </table>
+        </div>
+        <div id="desc" class="col-md-6">
+            <h1>Sieve of Eratosthenes</h1>
+            <p>
+                Sieve of Eratosthenes is one of the most effective algorithm use to find all the primes numbers less than N.
+            </p>
+            <h3>Algorithm : </h3>
+            <ol>
+                <li>
+                    Intialize an array of size n with all the values 1 or true.
+                </li>
+                <li>
+                    Set arr[0] and arr[1] as 0 or false as they are not prime.
+                </li>
+                <li>
+                    Intialize p as 2.
+                </li>
+                <li>
+                    While p*p is less than equal to n.
+                    <ol type="A">
+                        <li>If arr[p]== 1 / true
+                            <ol type="i">
+                                <li>Intialize j to p+p</li>
+                                <li>while j is less than equal to n
+                                    <ol type="I">
+                                        <li>arr[j]=0 / false</li>
+                                        <li>j=j+p</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>p=p+1</li>
+                    </ol>
+                </li>
+            </ol>
+          <div>
+            <button cl id="start" class="btn btn-info form-control">Start Visulaization</button>
+            
+            <button id="reset" class="btn btn-info form-control">Reset</button>   </div>
+            
+            <p id="step"></p>
+            <div id="prime"></div>
+        </div>
+            
+    </div>
+    </div>
+    </section>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
